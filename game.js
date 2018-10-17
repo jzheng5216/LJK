@@ -12,10 +12,18 @@ $(document).ready(function () {
         }
         
         var letter = event.key;
-        
         var word = wordList[Math.floor((Math.random() * 6) + 1)];
+        var answer = word.split(" ");
         
     
 
+    }
 }
    
+function gameOver {
+    if (answer.toString() == emptyArray.toString() && guesses <= 10){
+        wins++;
+        $("#wins").text(wins);
+
+        
+}
