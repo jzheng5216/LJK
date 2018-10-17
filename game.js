@@ -18,14 +18,7 @@ $(document).ready(function () {
         if (guesses >= 10) {
             return;
         }
-
         
-    var letter = event.key;
-        
-    var word = wordList[Math.floor((Math.random() * wordList.length);
-        
-
-
         var letter = event.key;
         var word = wordList[Math.floor((Math.random() * wordList.length) + 1)];
         var answer = word.split(" ");
