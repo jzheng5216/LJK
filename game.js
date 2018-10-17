@@ -7,10 +7,14 @@ var guessingWord;
 
 $(document).ready(function () {
     document.onkeyup = function(event) {
+        if (guesses >= 10){
+            return;
+        }
+        
         var letter = event.key;
         
         var word = wordList[Math.floor((Math.random() * 6) + 1)];
-        return word;
+        
     
 
 }
