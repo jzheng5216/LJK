@@ -11,11 +11,37 @@ $(document).ready(function () {
             return;
         }
         
-        var letter = event.key;
+    var letter = event.key;
         
-        var word = wordList[Math.floor((Math.random() * 6) + 1)];
+    var word = wordList[Math.floor((Math.random() * wordList.length);
+        
         
     
-
-}
+  updatePage: function (letter) {
    
+    if (this.guessesLeft === 0) {
+      this.restartGame();
+    }
+    else {
+      this.updateGuesses(letter);
+      this.updateMatchedLetters(letter);
+      this.rebuildWordView();
+      if (this.updateWins() === true) {
+        this.restartGame();
+      }
+    }
+updateGuesses: function(letter) {
+    if (this.guessesLeft === 0) {
+      this.restartGame();
+    }
+    else {
+      this.updateGuesses(letter);
+      this.updateMatchedLetters(letter);
+      this.rebuildWordView();
+      if (this.updateWins() === true) {
+        this.restartGame();
+      }
+    }
+
+   
+}
