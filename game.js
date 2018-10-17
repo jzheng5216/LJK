@@ -20,10 +20,11 @@ $(document).ready(function () {
     }
 }
    
-function gameOver {
+function gameOver () {
     if (answer.toString() == emptyArray.toString() && guesses <= 10){
         wins++;
         $("#wins").text(wins);
-
-        
-}
+    if (answe.toString() !== emptyArray.toString() && guess > 10){
+        loss++;
+        $("#losses").text(losses);
+    }
