@@ -20,8 +20,24 @@ $(document).ready(function () {
         }
 
         var letter = event.key;
-
         var word = wordList[Math.floor((Math.random() * wordList.length) + 1)];
+        var answer = word.split(" ");
+        
+    
+
+    }
+}
+   
+function gameOver () {
+    if (answer.toString() == emptyArray.toString() && guesses <= 10){
+        wins++;
+        $("#wins").text(wins);
+    if (answe.toString() !== emptyArray.toString() && guess > 10){
+        loss++;
+        $("#losses").text(losses);
+    }
+
+        
 
 
 
