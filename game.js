@@ -19,11 +19,48 @@ $(document).ready(function () {
             return;
         }
 
+        
+    var letter = event.key;
+        
+    var word = wordList[Math.floor((Math.random() * wordList.length);
+        
+
+
         var letter = event.key;
         var word = wordList[Math.floor((Math.random() * wordList.length) + 1)];
         var answer = word.split(" ");
+
         
     
+  updatePage: function (letter) {
+   
+    if (this.guessesLeft === 0) {
+      this.restartGame();
+    }
+    else {
+      this.updateGuesses(guesses);
+      this.updateMatchedLetters(guesses);
+      this.rebuildWordView();
+      if (this.updateWins() === true) {
+        this.restartGame();
+      }
+    }
+updateGuesses: function(guesses) {
+    if (this.guessesLeft === 0) {
+      this.restartGame();
+    }
+    else {
+      this.updateGuesses(guesses);
+      this.updateMatchedLetters(guesses);
+      this.rebuildWordView();
+      if (this.updateWins() === true) {
+        this.restartGame();
+      }
+    }
+
+
+   
+}
 
     }
 }
@@ -55,3 +92,4 @@ function gameOver () {
 
 
 }); 
+
