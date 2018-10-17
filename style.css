@@ -1,0 +1,13 @@
+body {
+    background-image: url("https://visualcocaine.org/public/uploads/large/114982426357da8qvqhd0vp0cba74rg7ts5nxzlqypxzmzwqxtdshcraogyqsxueql5njqrk0vaszwonppco9mw65klf3qbiv2uzkbjwpr2fi05.gif");
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 0 goldenrod;
+    font-size: 32px;
+    text-align: center;
+}
+
+#Hangman{
+    font-size: 68px;
+    text-align: center;
+}
